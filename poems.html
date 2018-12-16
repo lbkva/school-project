@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Poems</title>
-	<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" href="css/poems.css">
 </head>
 <body>
@@ -19,89 +19,79 @@
 					<menu class="header__menu">
 						<li class="header__li"><a class="header__link" href="index.html">home</a></li>
 						<li class="header__li"><a class="header__link" href="poems.html">poems</a></li>
-						<li class="header__li"><a class="header__link" href="secondpage.html">stories</a></li>
-						<li class="header__li"><a class="header__link" href="secondpage.html">ask us for a poem</a></li>
+						<li class="header__li"><a class="header__link" href="stories.html">stories</a></li>
+						<li class="header__li"><a class="header__link" href="#">ask us for a poem</a></li>
 						<li class="header__li"><a class="header__link" href="#">contact us</a></li>
-						<div class="top__button"><a href="#" class="center__link">log in</a></div>
 					</menu>
+					<div class="top__button"><a href="login.html" class="center__link">log in</a></div>
+					<div class="top__autorize">
+						<form action="#" class="auth__form">
+							<input class="top__form" type="text" placeholder="Login">
+							<input class="top__form" type="password" placeholder="Password">
+							<p class="form__text">Забыли пароль?</p>
+							<p><input class="form__button" type="submit" value="Вход"></a>
+							</form>
+						</div>
+					</div>
 				</section>
 
 				<section class="center__section">
-					<h1 class="center__title">Poems</h1>
-					<div class="center__subtitle">Вырази свои мысли с помощью стихов...</div>
-				</section>
-			</header>
-			<main class="main">
-				<div class="container flex-container">
+					<h1 class="center__title wow fadeIn" data-wow-duration="2.5s">Poems</h1>
+					<div class="center__subtitle wow fadeIn" data-wow-duration="3s">Вырази свои мысли с помощью стихов...</div>
+				</div>
+			</section>
+		</header> 
+
+		<main class="main">
+			<div class="container">
+				<h2 class="main__title">Last poems</h2>
+				<div class="card__block">
 					<div class="card__item">
-						<h2 class="card__title">Favorites</h2>
 						<div class="card__subtitle">Apple Macintosh</div>
-						<div class="card__text">Весь такой славный
-							белый, блестящий,
-							не мальчик,
-							а Apple Macintosh.
-							стоит, улыбается
-							видно, считает меня
-							слабой
-							или пропащей
-							а в глазах отчетливо —
-							«все равно никуда не уйдешь»
-
-							попала девочка на крючок
-							и куда она теперь —
-							рвать губы?
-							нет уж сиди пока
-							ломай о него смычок,
-							струны рви,
-							бумагу жги,
-							расскажи ему,
-							как тебя по ночам
-							целуют суккубы
-							приходят тайком
-							и рвут на части
-							растаскивают на куски
-
-							мальчик, побойся бога,
-							не надо сжимать тиски.
-
-							мальчик уверен
-							что я в него вшита,
-							впечатана, вживлена
-							как чужеродный чип.
-							а у меня
-							никакого алиби
-							никакой защиты
-							когда он стоит вот так передо мной
-							и предательски молчит.
-
-							а у меня фарш в груди
-							кровь носом
-							и ладони — в ожогах от сигарет
-							но сил не осталось
-							ни на истерики
-							ни на вопросы
-							меня самой
-							во мне
-							уже четверть года
-							как нет
-
-							а он стоит
-							весь такой белоснежно-терпкий
-							и смотрит не на меня
-							не в меня
-							а сквозь
-							и я ощущаю
-							спазмы в грудной клетке
-							там, где однажды сломалось
-							и, видно,
-							не так срослось.
-						</div>
+						<img class="card__img" src="img/woman.jpg">
 					</div>
-				</menu>
+					<div class="card__item">
+						<div class="card__subtitle">Apple Macintosh</div>
+						<img class="card__img" src="img/coffee.jpg">
+					</div>
+					<div class="card__item">
+						<div class="card__subtitle">Apple Macintosh</div>
+						<img class="card__img" src="img/umbrella.jpg">
+					</div>
+					<div class="card__item">
+						<div class="card__subtitle">Apple Macintosh</div>
+						<img class="card__img" src="img/journey.jpg">
+					</div>
+					<div class="card__item">
+						<div class="card__subtitle">Apple Macintosh</div>
+						<img class="card__img" src="img/clouds.jpg">
+					</div>
+					<div class="card__item">
+						<div class="card__subtitle">Apple Macintosh</div>
+						<img class="card__img" src="img/sea.jpg">
+					</div>
+					<div class="card__item">
+						<div class="card__subtitle">Apple Macintosh</div>
+						<img class="card__img" src="img/art.jpg">
+					</div>
+					<div class="card__item">
+						<div class="card__subtitle">Apple Macintosh</div>
+						<img class="card__img" src="img/violin.jpg">
+					</div>
+				</div>
 			</div>
-		</div>
-	</main>
+		</main>
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
 
-</div>
-</body>
-</html>
+			var loginLink = document.querySelector('.center__link');
+			var auth = document.querySelector('.top__autorize');
+
+			loginLink.addEventListener('click', function(event){
+				event.preventDefault();
+				auth.classList.toggle('show');
+			});
+		</script>
+	</body>
+	</html>
